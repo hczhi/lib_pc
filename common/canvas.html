@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width,maximum-scale=1.3,user-scalable=no,minimal-ui"/> -->
+    <meta name="viewport" content="width=device-width,maximum-scale=1,user-scalable=no,minimal-ui"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-touch-fullscreen" content="no"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>canvas</title>
+</head>
+<body>
+
+  <canvas id="myCanvas" width="400" height="600" style="border:1px solid #d3d3d3; margin:20px auto; width:400px; display:block;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+	
+	</body>
+	<script type="text/javascript" src="./js/jquery-1.11.2.min.js"></script>
+  <script>
+      var c=document.getElementById("myCanvas");
+      var ctx=c.getContext("2d");
+
+      var radii = 100,type=-1;
+      ctx.beginPath();
+      ctx.arc(200,300,radii,0,2*Math.PI);
+      ctx.fillStyle="#FC7979";
+      ctx.fill();
+
+      var ani = setInterval(function(){
+        ctx.beginPath();
+        if(radii==40||radii==200){
+          type=-type;
+        }
+        radii+=type;
+        ctx.clearRect(0,0,400,600);
+        ctx.arc(200,300,radii,0,2*Math.PI);
+        ctx.fillStyle="#FC7979";
+        ctx.fill();
+      },20);
+      // ctx.arc(300,400,50,0,2*Math.PI);
+      // ctx.strokeStyle="#FC7979";
+      // ctx.stroke();
+      // ctx.fillStyle="#000";
+      // ctx.fill();
+
+
+  </script>
+</html>
+<script>
+	
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
