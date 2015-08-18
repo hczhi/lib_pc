@@ -1,0 +1,56 @@
+{
+    "res": {
+        "common/css/base.less": {
+            "uri": "/common/css/base.css",
+            "type": "css",
+            "deps": [
+                "common/css/reset.less"
+            ],
+            "id": "common/css/base.less"
+        },
+        "common/css/reset.less": {
+            "uri": "/common/css/reset.css",
+            "type": "css",
+            "id": "common/css/reset.less"
+        },
+        "common/js/base.js": {
+            "uri": "/common/js/base.js",
+            "type": "js",
+            "deps": [
+                "common/js/jquery-1.11.2.min.js"
+            ],
+            "id": "common/js/base.js"
+        },
+        "common/js/jquery-1.11.2.min.js": {
+            "uri": "/common/js/jquery-1.11.2.min.js",
+            "type": "js",
+            "id": "common/js/jquery-1.11.2.min.js"
+        },
+        "modules/calendar/calendar.js": {
+            "uri": "/modules/calendar/calendar.js",
+            "type": "js",
+            "deps": [
+                "common/js/base.js",
+                "modules/calendar/calendar.less"
+            ],
+            "id": "modules/calendar/calendar.js"
+        },
+        "modules/calendar/calendar.less": {
+            "uri": "/modules/calendar/calendar.css",
+            "type": "css",
+            "deps": [
+                "common/css/base.less"
+            ],
+            "id": "modules/calendar/calendar.less"
+        },
+        "pages/index.html": {
+            "uri": "/index.html",
+            "type": "html",
+            "deps": [
+                "modules/calendar/calendar.js",
+                "modules/calendar/calendar.less"
+            ]
+        }
+    },
+    "pkg": {}
+}
