@@ -242,6 +242,7 @@
 
 //festival
 var festival = {
+		//通用
 		s:{	
 			5:{
 				1:"劳动节"
