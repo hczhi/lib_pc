@@ -6,11 +6,13 @@
             "deps": [
                 "common/css/reset.less"
             ],
+            "pkg": "p0",
             "id": "common/css/base.less"
         },
         "common/css/reset.less": {
             "uri": "/common/css/reset.css",
             "type": "css",
+            "pkg": "p0",
             "id": "common/css/reset.less"
         },
         "common/js/base.js": {
@@ -19,11 +21,13 @@
             "deps": [
                 "common/js/jquery-1.11.2.min.js"
             ],
+            "pkg": "p3",
             "id": "common/js/base.js"
         },
         "common/js/jquery-1.11.2.min.js": {
             "uri": "/common/js/jquery-1.11.2.min.js",
             "type": "js",
+            "pkg": "p2",
             "id": "common/js/jquery-1.11.2.min.js"
         },
         "modules/calendar/calendar.js": {
@@ -33,6 +37,7 @@
                 "common/js/base.js",
                 "modules/calendar/calendar.less"
             ],
+            "pkg": "p4",
             "id": "modules/calendar/calendar.js"
         },
         "modules/calendar/calendar.less": {
@@ -41,6 +46,7 @@
             "deps": [
                 "common/css/base.less"
             ],
+            "pkg": "p1",
             "id": "modules/calendar/calendar.less"
         },
         "pages/index.html": {
@@ -52,5 +58,52 @@
             ]
         }
     },
-    "pkg": {}
+    "pkg": {
+        "p0": {
+            "uri": "./css/base.css",
+            "type": "css",
+            "has": [
+                "common/css/reset.less",
+                "common/css/base.less"
+            ]
+        },
+        "p1": {
+            "uri": "./css/calendar.css",
+            "type": "css",
+            "has": [
+                "modules/calendar/calendar.less"
+            ],
+            "deps": [
+                "common/css/base.less"
+            ]
+        },
+        "p2": {
+            "uri": "./js/jq.js",
+            "type": "js",
+            "has": [
+                "common/js/jquery-1.11.2.min.js"
+            ]
+        },
+        "p3": {
+            "uri": "./js/base.js",
+            "type": "js",
+            "has": [
+                "common/js/base.js"
+            ],
+            "deps": [
+                "common/js/jquery-1.11.2.min.js"
+            ]
+        },
+        "p4": {
+            "uri": "./js/calendar.js",
+            "type": "js",
+            "has": [
+                "modules/calendar/calendar.js"
+            ],
+            "deps": [
+                "common/js/base.js",
+                "modules/calendar/calendar.less"
+            ]
+        }
+    }
 }
