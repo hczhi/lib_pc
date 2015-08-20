@@ -73,14 +73,14 @@ fis.config.merge({
             {
                 //图片文件
                 reg : /^\/modules\/[^\/]+\/([^\/]+\.(?:png|gif|jpg))$/,
-                // url : 'images/$1',
-                release : '/testimages/$1'
+                url : 'testimages/$1',
+                release : './testimages/$1'
             },
             {
                 //图片文件2
                 reg : /^\/pages\/[^\/]+\/([^\/]+\.(?:png|gif|jpg))$/,
-                // url : 'images/$1',
-                release : '/testimages/$1'
+                url : 'testimages/$1',
+                release : './testimages/$1'
             },
             {
                 reg : /^\/pages\/([^\/]+\.html)$/,
@@ -113,14 +113,26 @@ fis.config.merge({
         'css/calendar.css': [
             '/modules/calendar/calendar.less'
         ],
+        'css/banner_m.css': [
+            '/modules/banner_m/banner_m.less'
+        ],
         'js/jq.js': [
             '/common/js/jquery-1.11.2.min.js'
+        ],
+        'js/zepto.js': [
+            '/common/js/zepto.js'
+        ],
+        'js/touch.js': [
+            '/common/js/touch.js'
         ],
         'js/base.js': [
             '/common/js/base.js'
         ],
         'js/calendar.js': [
             '/modules/calendar/calendar.js'
+        ],
+         'js/banner_m.js': [
+            '/modules/banner_m/banner_m.js'
         ],
     }
 });

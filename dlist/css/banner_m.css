@@ -1,0 +1,32 @@
+/**
+ 	* @require common/css/base.less
+ */
+.banner_m .ani {
+  -moz-transition: all 0.3s ease 0s;
+  /* Firefox 4 */
+  -webkit-transition: all 0.3s ease 0s;
+  /* Safari 和 Chrome */
+  -o-transition: all 0.3s ease 0s;
+  /* Opera */
+  transition: all 0.3s ease 0s;
+}
+.banner_m .box {
+  position: relative;
+  overflow: hidden;
+}
+.banner_m .box ul {
+  position: relative;
+  -webkit-transform: translate3d(0, 0, 0);
+  /* Safari 和 Chrome */
+  -o-transform: translate3d(0, 0, 0);
+  /* Opera */
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.banner_m .box ul li {
+  float: left;
+}
+.banner_m .box ul li img {
+  width: 100%;
+  height: 100%;
+}

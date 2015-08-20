@@ -21,14 +21,46 @@
             "deps": [
                 "common/js/jquery-1.11.2.min.js"
             ],
-            "pkg": "p3",
+            "pkg": "p6",
             "id": "common/js/base.js"
         },
         "common/js/jquery-1.11.2.min.js": {
             "uri": "/common/js/jquery-1.11.2.min.js",
             "type": "js",
-            "pkg": "p2",
+            "pkg": "p3",
             "id": "common/js/jquery-1.11.2.min.js"
+        },
+        "common/js/touch.js": {
+            "uri": "/common/js/touch.js",
+            "type": "js",
+            "pkg": "p5",
+            "id": "common/js/touch.js"
+        },
+        "common/js/zepto.js": {
+            "uri": "/common/js/zepto.js",
+            "type": "js",
+            "pkg": "p4",
+            "id": "common/js/zepto.js"
+        },
+        "modules/banner_m/banner_m.js": {
+            "uri": "/modules/banner_m/banner_m.js",
+            "type": "js",
+            "deps": [
+                "common/js/zepto.js",
+                "common/js/touch.js",
+                "modules/banner_m/banner_m.less"
+            ],
+            "pkg": "p8",
+            "id": "modules/banner_m/banner_m.js"
+        },
+        "modules/banner_m/banner_m.less": {
+            "uri": "/modules/banner_m/banner_m.css",
+            "type": "css",
+            "deps": [
+                "common/css/base.less"
+            ],
+            "pkg": "p2",
+            "id": "modules/banner_m/banner_m.less"
         },
         "modules/calendar/calendar.js": {
             "uri": "/modules/calendar/calendar.js",
@@ -37,7 +69,7 @@
                 "common/js/base.js",
                 "modules/calendar/calendar.less"
             ],
-            "pkg": "p4",
+            "pkg": "p7",
             "id": "modules/calendar/calendar.js"
         },
         "modules/calendar/calendar.less": {
@@ -53,8 +85,8 @@
             "uri": "/index.html",
             "type": "html",
             "deps": [
-                "modules/calendar/calendar.js",
-                "modules/calendar/calendar.less"
+                "modules/banner_m/banner_m.js",
+                "modules/banner_m/banner_m.less"
             ]
         }
     },
@@ -78,13 +110,37 @@
             ]
         },
         "p2": {
+            "uri": "./css/banner_m.css",
+            "type": "css",
+            "has": [
+                "modules/banner_m/banner_m.less"
+            ],
+            "deps": [
+                "common/css/base.less"
+            ]
+        },
+        "p3": {
             "uri": "./js/jq.js",
             "type": "js",
             "has": [
                 "common/js/jquery-1.11.2.min.js"
             ]
         },
-        "p3": {
+        "p4": {
+            "uri": "./js/zepto.js",
+            "type": "js",
+            "has": [
+                "common/js/zepto.js"
+            ]
+        },
+        "p5": {
+            "uri": "./js/touch.js",
+            "type": "js",
+            "has": [
+                "common/js/touch.js"
+            ]
+        },
+        "p6": {
             "uri": "./js/base.js",
             "type": "js",
             "has": [
@@ -94,7 +150,7 @@
                 "common/js/jquery-1.11.2.min.js"
             ]
         },
-        "p4": {
+        "p7": {
             "uri": "./js/calendar.js",
             "type": "js",
             "has": [
@@ -103,6 +159,18 @@
             "deps": [
                 "common/js/base.js",
                 "modules/calendar/calendar.less"
+            ]
+        },
+        "p8": {
+            "uri": "./js/banner_m.js",
+            "type": "js",
+            "has": [
+                "modules/banner_m/banner_m.js"
+            ],
+            "deps": [
+                "common/js/zepto.js",
+                "common/js/touch.js",
+                "modules/banner_m/banner_m.less"
             ]
         }
     }
