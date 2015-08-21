@@ -11,7 +11,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
     <title>hc-lib</title>
 <link rel="stylesheet" type="text/css" href="./css/base.css">
-<link rel="stylesheet" type="text/css" href="./css/banner_m.css">
+<link rel="stylesheet" type="text/css" href="./css/scratch_card.css">
 
 </head>
 <body>
@@ -19,14 +19,19 @@
 <br>
 <br>
 <!--
-@require modules/banner_m/banner_m.js
-@require modules/banner_m/banner_m.less
+@require modules/scratch_card/scratch_card.js
+@require modules/scratch_card/scratch_card.less
 -->
-<div class="banner_m"></div>
+<img src="./testimages/2.jpg" id="_img" style="display:none;">
+<div class="scratch_card">
+	<div id="con" class="wrap">
+		<canvas id="myCanvas" width="320" height="180"></canvas>
+	</div>
+</div>
 	</body>
 	<script type="text/javascript" src="./js/zepto.js"></script>
 <script type="text/javascript" src="./js/touch.js"></script>
-<script type="text/javascript" src="./js/banner_m.js"></script>
+<script type="text/javascript" src="./js/scratch_card.js"></script>
 
 </html>
 

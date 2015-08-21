@@ -73,13 +73,13 @@ fis.config.merge({
             {
                 //图片文件
                 reg : /^\/modules\/[^\/]+\/([^\/]+\.(?:png|gif|jpg))$/,
-                url : 'testimages/$1',
+                url : './testimages/$1',
                 release : './testimages/$1'
             },
             {
                 //图片文件2
                 reg : /^\/pages\/[^\/]+\/([^\/]+\.(?:png|gif|jpg))$/,
-                url : 'testimages/$1',
+                url : '/testimages/$1',
                 release : './testimages/$1'
             },
             {
@@ -116,6 +116,9 @@ fis.config.merge({
         'css/banner_m.css': [
             '/modules/banner_m/banner_m.less'
         ],
+        'css/scratch_card.css': [
+            '/modules/scratch_card/scratch_card.less'
+        ],
         'js/jq.js': [
             '/common/js/jquery-1.11.2.min.js'
         ],
@@ -134,6 +137,9 @@ fis.config.merge({
          'js/banner_m.js': [
             '/modules/banner_m/banner_m.js'
         ],
+         'js/scratch_card.js': [
+            '/modules/scratch_card/scratch_card.js'
+        ]
     }
 });
 

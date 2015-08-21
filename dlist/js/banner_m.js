@@ -137,10 +137,7 @@ var banner_data = [
 		img:"./testimages/pic_hd_1.png"
 	}
 ];
-
-var _w = $(window).width(),
-	_h = _w*180/320;
-var banner = new BANNER_m($(".banner_m"),banner_data,_w,_h);
+var banner = new BANNER_m($(".banner_m"),banner_data,320,160);
 
 
 
