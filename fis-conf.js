@@ -61,7 +61,7 @@ fis.config.merge({
             {
                 //css 图片文件
                 reg : /^\/modules\/[^\/]+\/images\/([^\/]+\.(?:png|gif|jpg))$/,
-                url : 'images/$1',
+                //url : 'images/$1',
                 release : '/css/images/$1'
             },
             {

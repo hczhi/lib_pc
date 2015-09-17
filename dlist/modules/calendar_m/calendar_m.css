@@ -2,7 +2,7 @@
  	* @require common/css/base.less
  */
 .calendar {
-  position: absolute;
+  position: relative;
 }
 .calendar .top {
   text-align: center;
@@ -25,12 +25,12 @@
 }
 .WdateDiv {
   position: relative;
-  width: 280px;
+  width: 100%;
   font-size: 12px;
   color: #333;
-  border: solid 1px #69AA1D;
+  border-bottom: solid 1px #eee;
   background-color: #fff;
-  padding: 10px 1px 0px;
+  padding: 10px 1px 20px;
 }
 .WdateDiv .WdayTable {
   line-height: 20px;
@@ -52,6 +52,9 @@
   right: 0px;
   top: 0px;
 }
+.WdateDiv .WdayTable .MTitle {
+  border-bottom: 1px solid #eee;
+}
 .WdateDiv .WdayTable .MTitle td {
   line-height: 24px;
   color: #404040;
@@ -63,6 +66,7 @@
 .WdateDiv .WdayTable .WotherDay {
   color: #D4D4D4;
   cursor: default;
+  height: 33px;
 }
 .WdateDiv .WdayTable td {
   line-height: 30px;
@@ -71,7 +75,6 @@
   background: #fff;
   cursor: pointer;
   padding: 1px;
-  border: none;
 }
 .WdateDiv .WdayTable .todayclass {
   background: #eee;
@@ -92,4 +95,10 @@
   color: #fff;
   border: none;
   cursor: pointer;
+}
+.con_tr {
+  border-bottom: 1px solid #eee;
+}
+.con_tr td {
+  border-right: 1px solid #eee;
 }

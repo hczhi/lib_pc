@@ -6,13 +6,11 @@
             "deps": [
                 "common/css/reset.less"
             ],
-            "pkg": "p0",
             "id": "common/css/base.less"
         },
         "common/css/reset.less": {
             "uri": "/common/css/reset.css",
             "type": "css",
-            "pkg": "p0",
             "id": "common/css/reset.less"
         },
         "common/js/base.js": {
@@ -21,25 +19,21 @@
             "deps": [
                 "common/js/jquery-1.11.2.min.js"
             ],
-            "pkg": "p7",
             "id": "common/js/base.js"
         },
         "common/js/jquery-1.11.2.min.js": {
             "uri": "/common/js/jquery-1.11.2.min.js",
             "type": "js",
-            "pkg": "p4",
             "id": "common/js/jquery-1.11.2.min.js"
         },
         "common/js/touch.js": {
             "uri": "/common/js/touch.js",
             "type": "js",
-            "pkg": "p6",
             "id": "common/js/touch.js"
         },
         "common/js/zepto.js": {
             "uri": "/common/js/zepto.js",
             "type": "js",
-            "pkg": "p5",
             "id": "common/js/zepto.js"
         },
         "modules/banner_m/banner_m.js": {
@@ -50,7 +44,6 @@
                 "common/js/touch.js",
                 "modules/banner_m/banner_m.less"
             ],
-            "pkg": "p9",
             "id": "modules/banner_m/banner_m.js"
         },
         "modules/banner_m/banner_m.less": {
@@ -59,8 +52,25 @@
             "deps": [
                 "common/css/base.less"
             ],
-            "pkg": "p2",
             "id": "modules/banner_m/banner_m.less"
+        },
+        "modules/bezier/bezier.js": {
+            "uri": "/modules/bezier/bezier.js",
+            "type": "js",
+            "deps": [
+                "common/js/zepto.js",
+                "common/js/touch.js",
+                "modules/bezier/bezier.less"
+            ],
+            "id": "modules/bezier/bezier.js"
+        },
+        "modules/bezier/bezier.less": {
+            "uri": "/modules/bezier/bezier.css",
+            "type": "css",
+            "deps": [
+                "common/css/base.less"
+            ],
+            "id": "modules/bezier/bezier.less"
         },
         "modules/calendar/calendar.js": {
             "uri": "/modules/calendar/calendar.js",
@@ -69,7 +79,6 @@
                 "common/js/base.js",
                 "modules/calendar/calendar.less"
             ],
-            "pkg": "p8",
             "id": "modules/calendar/calendar.js"
         },
         "modules/calendar/calendar.less": {
@@ -78,8 +87,24 @@
             "deps": [
                 "common/css/base.less"
             ],
-            "pkg": "p1",
             "id": "modules/calendar/calendar.less"
+        },
+        "modules/calendar_m/calendar_m.js": {
+            "uri": "/modules/calendar_m/calendar_m.js",
+            "type": "js",
+            "deps": [
+                "common/js/base.js",
+                "modules/calendar_m/calendar_m.less"
+            ],
+            "id": "modules/calendar_m/calendar_m.js"
+        },
+        "modules/calendar_m/calendar_m.less": {
+            "uri": "/modules/calendar_m/calendar_m.css",
+            "type": "css",
+            "deps": [
+                "common/css/base.less"
+            ],
+            "id": "modules/calendar_m/calendar_m.less"
         },
         "modules/scratch_card/scratch_card.js": {
             "uri": "/modules/scratch_card/scratch_card.js",
@@ -89,7 +114,6 @@
                 "common/js/touch.js",
                 "modules/scratch_card/scratch_card.less"
             ],
-            "pkg": "p10",
             "id": "modules/scratch_card/scratch_card.js"
         },
         "modules/scratch_card/scratch_card.less": {
@@ -98,122 +122,16 @@
             "deps": [
                 "common/css/base.less"
             ],
-            "pkg": "p3",
             "id": "modules/scratch_card/scratch_card.less"
         },
         "pages/index.html": {
             "uri": "/index.html",
             "type": "html",
             "deps": [
-                "modules/scratch_card/scratch_card.js",
-                "modules/scratch_card/scratch_card.less"
+                "modules/calendar_m/calendar_m.js",
+                "modules/calendar_m/calendar_m.less"
             ]
         }
     },
-    "pkg": {
-        "p0": {
-            "uri": "./css/base.css",
-            "type": "css",
-            "has": [
-                "common/css/reset.less",
-                "common/css/base.less"
-            ]
-        },
-        "p1": {
-            "uri": "./css/calendar.css",
-            "type": "css",
-            "has": [
-                "modules/calendar/calendar.less"
-            ],
-            "deps": [
-                "common/css/base.less"
-            ]
-        },
-        "p2": {
-            "uri": "./css/banner_m.css",
-            "type": "css",
-            "has": [
-                "modules/banner_m/banner_m.less"
-            ],
-            "deps": [
-                "common/css/base.less"
-            ]
-        },
-        "p3": {
-            "uri": "./css/scratch_card.css",
-            "type": "css",
-            "has": [
-                "modules/scratch_card/scratch_card.less"
-            ],
-            "deps": [
-                "common/css/base.less"
-            ]
-        },
-        "p4": {
-            "uri": "./js/jq.js",
-            "type": "js",
-            "has": [
-                "common/js/jquery-1.11.2.min.js"
-            ]
-        },
-        "p5": {
-            "uri": "./js/zepto.js",
-            "type": "js",
-            "has": [
-                "common/js/zepto.js"
-            ]
-        },
-        "p6": {
-            "uri": "./js/touch.js",
-            "type": "js",
-            "has": [
-                "common/js/touch.js"
-            ]
-        },
-        "p7": {
-            "uri": "./js/base.js",
-            "type": "js",
-            "has": [
-                "common/js/base.js"
-            ],
-            "deps": [
-                "common/js/jquery-1.11.2.min.js"
-            ]
-        },
-        "p8": {
-            "uri": "./js/calendar.js",
-            "type": "js",
-            "has": [
-                "modules/calendar/calendar.js"
-            ],
-            "deps": [
-                "common/js/base.js",
-                "modules/calendar/calendar.less"
-            ]
-        },
-        "p9": {
-            "uri": "./js/banner_m.js",
-            "type": "js",
-            "has": [
-                "modules/banner_m/banner_m.js"
-            ],
-            "deps": [
-                "common/js/zepto.js",
-                "common/js/touch.js",
-                "modules/banner_m/banner_m.less"
-            ]
-        },
-        "p10": {
-            "uri": "./js/scratch_card.js",
-            "type": "js",
-            "has": [
-                "modules/scratch_card/scratch_card.js"
-            ],
-            "deps": [
-                "common/js/zepto.js",
-                "common/js/touch.js",
-                "modules/scratch_card/scratch_card.less"
-            ]
-        }
-    }
+    "pkg": {}
 }
